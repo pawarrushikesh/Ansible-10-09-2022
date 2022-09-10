@@ -1,0 +1,70 @@
+1) create git repository
+2)who pushes code on github server so we need to config user name and mail
+	git config --global user.name "Rushikesh Pawar"
+	git config --global user.email "rushikeshawserver@gmail.com"
+
+3)initialise git , it will create .git directory
+	git init
+
+4) convert this repository to ,  we are pushing all data in Ansible repository:-
+	 git remote add origin https://github.com/rkcloudcafe/Ansible.git
+	 git remote -v
+	 
+5) create a yml file -- system directory
+	vi test.yml
+	
+6) check status of git, any new file added or not
+	git status
+
+7)file add in statging or part of repository
+git add test.yml
+
+8) git commit -m "added test.yml"
+
+9) push data to git repository
+ git push origin  master
+ 
+10) create new branch
+git checkout -b dev
+
+11) check working branch now its dev
+git branch
+12) create test2.yml file
+vi test2.yml
+
+13) git status
+
+14) git add *
+
+15) git status
+
+16) git commit -m "added test2.yml to dev"
+
+17) git status
+
+18) git push origin dev
+
+19) data will added in dev origin
+
+how to modified data add in repo again: -
+and check logs 
+
+git log
+git diff id1 id2
+
+20) git merge
+git branch
+git merge dev
+git log
+git tag 1.0.0 ID(c22115678e0994471a97fd64b134fffb682288e7)
+git push --tags origin
+
+
+21) how to undo changes
+git log
+git reset --hard ID  ===it will reset all after task
+
+22) git server -- comunity and enterprises 
+
+
+
