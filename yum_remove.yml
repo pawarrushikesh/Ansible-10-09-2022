@@ -1,0 +1,9 @@
+---
+- name: remove package
+  hosts: all
+  become: true
+  tasks:
+    - name: remove package
+      yum:
+        name: wget
+        state: absent

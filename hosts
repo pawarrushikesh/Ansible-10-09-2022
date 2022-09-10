@@ -1,0 +1,2 @@
+redhat ansible_host=3.110.135.70 ansible_user=ec2-user
+ubuntu ansible_host=3.110.165.123 ansible_user=ubuntu

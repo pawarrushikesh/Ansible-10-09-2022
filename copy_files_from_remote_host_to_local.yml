@@ -1,0 +1,13 @@
+---
+- name: copy remote file to local
+  hosts: all
+  become: yes
+  vars:
+    log_file: "/var/log/messages"
+    store_file: "logs"
+
+  tasks:
+    - name: copy remote file to local system
+      fetch:
+        src: "{{log_file}}"
+        dest: "{{store_file}}"

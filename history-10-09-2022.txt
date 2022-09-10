@@ -1,0 +1,218 @@
+    1  yum update
+    2  yum install ansible
+    3  sudo amazon-linux-extras install ansible2
+    4  yum install ansible
+    5  ansible-doc
+    6  ansible-doc2
+    7  ansible-doc-2
+    8  ansible-doc --list
+    9  ansible-doc
+   10  ansible-doc -M yum
+   11  ansible-doc -V
+   12  vi hosts
+   13  ansible -i hosts all -m ping
+   14  vi hosts
+   15  ansible -i hosts all -m ping
+   16  vi .ssh/authorized_keys
+   17  ansible -i hosts all -m ping
+   18  vi hosts
+   19  cd .ssh/
+   20  ls
+   21  vi authorized_keys
+   22  ls -la
+   23  chmod 400 authorized_keys
+   24  cd ..
+   25  ls
+   26  pwd
+   27  ansible -i hosts all -m ping
+   28  vi hosts
+   29  ssh ec2-user@3.110.135.70
+   30  cd .ssh/
+   31  ls
+   32  vi authorized_keys
+   33  vi id_rsa
+   34  chmod 400 id_rsa
+   35  cd ..
+   36  ansible -i hosts all -m ping
+   37  vi .ssh/id_rsa
+   38  ansible -i hosts all -m ping
+   39  ansible -i hosts -m yum -a "name=wget state=present"
+   40  ansible -i hosts all -m yum -a "name=wget state=present"
+   41  ansible -i hosts all -m apt -a "name=wget state=present"
+   42  ansible -i hosts all -m apt -a "name=wget state=present" -b
+   43  ansible -i hosts all -m command -a "which wget"
+   44  vi yum_remove.yml
+   45  ansible-playbook -i hosts yum_remove.yml
+   46  ansible -i hosts all -m command -a "which wget"
+   47  vi yum_install.yml
+   48  ansible-playbook -i hosts yum_install.yml
+   49  ansible -i hosts all -m command -a "which wget"
+   50  ansible-playbook -i hosts yum_remove.yml
+   51  ansible-playbook -i hosts yum_install.yml
+   52  ls
+   53  vi yum-specific.yml
+   54  ansible-playbook -i hosts yum-specific.yml
+   55  ansible-playbook -i hosts yum_remove.yml
+   56  ansible -i hosts all -m command -a "wget --version"
+   57  ansible-playbook -i hosts yum-specific.yml
+   58  ansible -i hosts all -m command -a "yum list wget*"
+   59  yum info wget
+   60  vi yum-specific.yml
+   61  ansible-playbook -i hosts yum-specific.yml
+   62  ansible -i hosts all -m command -a "wget --version"
+   63  ansible-playbook -i hosts yum_install.yml
+   64  cat hosts
+   65  ssh 3.110.135.70
+   66  ssh ec2-user@3.110.135.70
+   67  yum history
+   68  yum history list
+   69  yum history list all
+   70  uptime
+   71  yum history all list
+   72  yum history all
+   73  yum history list all
+   74  cd
+   75  ls
+   76  cat hosts
+   77  ssh ec2-user@3.110.135.70
+   78  cd
+   79  ls
+   80  vi yum_update.yml
+   81  cat yum_remove.yml
+   82  vi yum_update.yml
+   83  ansible-playbook -i hosts yum_update.yml
+   84  vi yum_update.yml
+   85  ansible-playbook -i hosts yum_update.yml
+   86  vi yum_update.yml
+   87  ansible-playbook -i hosts yum_update.yml
+   88  vi yum_update.yml
+   89  ansible-playbook -i hosts yum_update.yml
+   90  vi yum_update.yml
+   91  ansible-playbook -i hosts yum_update.yml
+   92  vi yum_update.yml
+   93  ansible-playbook -i hosts yum_update.yml
+   94  vi yum_update.yml
+   95  ansible-playbook -i hosts yum_update.yml
+   96  vi yum_update.yml
+   97  ansible-playbook -i hosts yum_update.yml
+   98  vi yum_update.yml
+   99  vi yum_update.yml
+  100  ansible-playbook -i hosts yum_update.yml
+  101  vi yum_update.yml
+  102  vi yum_update.yml
+  103  ansible-playbook -i hosts yum_update.yml
+  104  ls
+  105  ll
+  106  cp yum_update.yml yum_update_reboot.yml
+  107  vi yum_update_reboot.yml
+  108  vi yum_update.yml
+  109  vi yum_install_httpd_restart.yml
+  110  ansible -i hosts yum_install_httpd_restart.yml
+  111  ansible-playbook -i hosts yum_install_httpd_restart.yml
+  112  cat yum_install_httpd_restart.yml
+  113  ansible-playbook -i hosts yum_install_httpd_restart.yml
+  114  ll
+  115  cat yum_install.yml
+  116  cat yum_update_reboot.yml
+  117  cat yum_install_httpd_restart.yml
+  118  vi yum_install_httpd_restart_diff_os.yml
+  119  ansible-playbook -i hosts yum_install_httpd_restart_diff_os.yml
+  120  vi yum_install_httpd_restart_diff_os.yml
+  121  ansible-playbook -i hosts yum_install_httpd_restart_diff_os.yml
+  122  vi indes.html
+  123  ansible-playbook -i hosts yum_install_httpd_restart_diff_os.yml
+  124  vi indes.html
+  125  vi indes.html
+  126  vi yum_install_httpd_restart_diff_os.yml
+  127  ansible-playbook -i hosts yum_install_httpd_restart_diff_os.yml
+  128  ansible-playbook -i hosts yum_install_httpd_restart_diff_os.yml -vvv
+  129  ls
+  130  pwd
+  131  vi index.html
+  132  ansible-playbook -i hosts yum_install_httpd_restart_diff_os.yml -vvv
+  133  ll
+  134  pwdll
+  135  ll
+  136  cat yum_install_httpd_restart_diff_os.yml
+  137  mv  yum_install_httpd_restart_diff_os.yml yum_install_httpd_restart_diff_os_copy_index file.yml
+  138  mv  yum_install_httpd_restart_diff_os.yml yum_install_httpd_restart_diff_os_copy_index_file.yml
+  139  ll
+  140  ll
+  141  ll
+  142  vi copy_files_from_remote_host_to_local.yml
+  143  ansible-playbook -i hosts copy_files_from_remote_host_to_local.yml
+  144  cat yum_install_httpd_restart.yml
+  145  cat yum_install_httpd_restart_diff_os_copy_index_file.yml
+  146  vi copy_files_from_remote_host_to_local.yml
+  147  ansible-playbook -i hosts copy_files_from_remote_host_to_local.yml
+  148  tree
+  149  yum install tree
+  150  tree
+  151  cat yum_install_httpd_restart_diff_os_copy_index_file.yml
+  152  cat copy_files_from_remote_host_to_local.yml
+  153  vi copy_files_from_remote_host_to_local.yml
+  154  vi copy_files_from_remote_host_to_local.yml
+  155  ansible-playbook -i hosts copy_files_from_remote_host_to_local.yml
+  156  vi copy_files_from_remote_host_to_local.yml
+  157  ls
+  158  rm -rf logs
+  159  vi copy_files_from_remote_host_to_local.yml -vvv
+  160  ansible-playbook -i hosts copy_files_from_remote_host_to_local.yml -vvv
+  161  tree
+  162  vi copy_files_from_remote_host_to_local.yml -vvv
+  163  ansible-playbook -i hosts copy_files_from_remote_host_to_local.yml -vvv
+  164  tree
+  165  vi copy_files_from_remote_host_to_local.yml -vvv
+  166  rm -rf logs/
+  167  ansible-playbook -i hosts copy_files_from_remote_host_to_local.yml
+  168  ls
+  169  ll
+  170  vi user_create.yml
+  171  ansible-playbook -i hosts user_create.yml
+  172  ansible -i hosts all -m command -a "id rushi"
+  173  ansible -i hosts all -m command -a "ls /home/rushi"
+  174  ansible -i hosts all -m command -a "ls /home/rushi" -b
+  175  ansible-playbook -i hosts user_create.yml
+  176  vi user_create.yml
+  177  ansible-playbook -i hosts user_create.yml
+  178  ansible -i hosts all -m command -a "ls /home/xyz" -b
+  179  ansible -i hosts all -m command -a "ls -ld /home/xyz" -b
+  180  ansible -i hosts all -m command -a "ls -ld /home/rushi" -b
+  181  cat user_create.yml
+  182  vi delete_user.yml
+  183  ansible-playbook -i hosts delete_user.yml
+  184  cat delete_user.yml
+  185  ansible -i hosts all -m command -a "ls -ld /home/rushi" -b
+  186  ansible -i hosts all -m command -a "id rushi" -b
+  187  ansible -i hosts all -m command -a "id xyz" -b
+  188  ansible -i hosts all -m command -a "id rushi" -b
+  189  vls
+  190  ls
+  191  vi delete_user-with-homedir.yml
+  192  ansible-playbook -i hosts delete_user-with-homedir.yml
+  193  vi delete_user-with-homedir.yml
+  194  ansible-playbook -i hosts delete_user-with-homedir.yml
+  195  vi delete_user-with-homedir.yml
+  196  ansible-playbook -i hosts delete_user-with-homedir.yml
+  197  vi delete_user-with-homedir.yml
+  198  ansible-playbook -i hosts delete_user-with-homedir.yml
+  199  ansible -i hosts all -m command -a "id xyz" -b
+  200  ansible -i hosts all -m command -a "ls -ld /home/xyz" -b
+  201  ansible -i hosts all -m command -a "ls -ld /home/rushi" -b
+  202  cat user_create.yml
+  203  ll
+  204  w
+  205  ls
+  206  cd git/
+  207  ls
+  208  cp -r /root/* .
+  209  ls
+  210  ll
+  211  w
+  212  tty
+  213  pkill -t pts/0
+  214  w
+  215  pkill -9 -t pts/0
+  216  w
+  217  history
+

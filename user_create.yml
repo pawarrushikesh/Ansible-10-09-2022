@@ -1,0 +1,12 @@
+---
+- name: user addition
+  hosts: all
+  become: yes
+  tasks:
+    - name: user example present
+      user:
+        name: xyz
+        password: "{{ 'password' | password_hash('sha512', '5912')}}"
+        state: "present"
+        create_home: true
+        home: "/home/xyz"

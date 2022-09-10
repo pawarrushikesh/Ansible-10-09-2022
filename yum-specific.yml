@@ -1,0 +1,10 @@
+---
+- name: yum module
+  hosts: all
+  become: true
+  tasks:
+    - name: yum specific version 
+      yum:
+        name: wget-1.14
+        state: present
+        allow_downgrade: true

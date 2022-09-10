@@ -1,0 +1,9 @@
+---
+- name: delete user
+  hosts: all
+  become: yes
+  tasks:
+    - name: delete users 
+      user:
+        name: rushi
+        state: absent

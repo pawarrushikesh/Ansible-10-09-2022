@@ -1,0 +1,9 @@
+---
+- name: yum module demo
+  hosts: all
+  become: true
+  tasks:
+    - name: yum install pkg
+      yum:
+        name: wget
+        state: present
